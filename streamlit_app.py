@@ -6,8 +6,6 @@ st.set_page_config(page_title="GPT-powered Chatbot", layout="wide")
 
 # Sidebar setup for configuration and session management
 st.sidebar.title("Chatbot Settings")
-st.sidebar.subheader("API Configuration")
-api_key = st.sidebar.text_input("OpenAI API Key", type="password", value=st.secrets["openai_api_key"])
 
 model_options = ["gpt-3.5-turbo", "gpt-4", "davinci-codex", "text-davinci-003"]
 selected_model = st.sidebar.selectbox("Choose your model", model_options)
